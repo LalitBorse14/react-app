@@ -31,10 +31,10 @@ export default function Contact() {
     // EmailJS Integration
     // Replace these placeholders with your actual keys from EmailJS dashboard
     emailjs.sendForm(
-      "YOUR_SERVICE_ID", 
-      "YOUR_TEMPLATE_ID", 
+      "service_9prry1t", 
+      "template_8lm7rnr", 
       formRef.current, 
-      "YOUR_PUBLIC_KEY"
+      "YhDAKcHFQZb72IDAq"
     )
     .then(() => {
       showToast('success');
