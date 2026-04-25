@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
 import emailjs from "@emailjs/browser"; // Make sure to run: npm install @emailjs/browser
 import leadingImg from '../assets/onions_imgs/leading_img.png';
+import Navbar from './Navbar';
 
 export default function Contact() {
   const [toast, setToast] = useState(null); // 'success' | 'error' | null
@@ -61,19 +62,7 @@ export default function Contact() {
       </div>
 
       {/* Navigation */}
-      <nav id="navbar" className="bg-[#00A300] text-white px-3 py-1">
-        <div className="container mx-auto px-4 flex justify-between items-center py-4">
-          <div className="flex items-center space-x-4">
-            <h1 className="text-xl font-bold text-gray-800 md:hidden">AGRI TRADE GLOBAL</h1>
-          </div>
-          <div className="flex items-center space-x-8 desktop-menu hidden md:flex w-full justify-start">
-            <a href="#/home" className="hover:text-black">Home</a>
-            <a href="#/about" className="hover:text-black">About Us</a>
-            <a href="#/gallery" className="hover:text-black">Gallery</a>
-            <a href="#/contact" className="hover:text-black">Contact Us</a>
-          </div>
-        </div>
-      </nav>
+      <Navbar></Navbar>
 
       {/* Main Content */}
       <div className="max-w-screen-lg mx-auto p-5">
